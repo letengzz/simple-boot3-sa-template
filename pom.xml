@@ -36,6 +36,10 @@
         <java.version>17</java.version>
         <fastjson2.version>2.0.56</fastjson2.version>
         <pagehelper.version>6.1.0</pagehelper.version>
+        <mybatis-plus.version>3.5.10.1</mybatis-plus.version>
+        <druid.version>1.2.24</druid.version>
+        <knife4j.version>4.5.0</knife4j.version>
+        <project.version>0.0.1-SNAPSHOT</project.version>
     </properties>
     <dependencies>
         <dependency>
@@ -62,6 +66,34 @@
                 <groupId>com.github.pagehelper</groupId>
                 <artifactId>pagehelper</artifactId>
                 <version>${pagehelper.version}</version>
+            </dependency>
+            <!-- https://mvnrepository.com/artifact/com.baomidou/mybatis-plus-boot-starter -->
+            <dependency>
+                <groupId>com.baomidou</groupId>
+                <artifactId>mybatis-plus-boot-starter</artifactId>
+                <version>${mybatis-plus.version}</version>
+            </dependency>
+            <!-- https://mvnrepository.com/artifact/com.alibaba/druid -->
+            <dependency>
+                <groupId>com.alibaba</groupId>
+                <artifactId>druid</artifactId>
+                <version>${druid.version}</version>
+            </dependency>
+            <!-- https://mvnrepository.com/artifact/com.github.xiaoymin/knife4j-openapi3-jakarta-spring-boot-starter -->
+            <dependency>
+                <groupId>com.github.xiaoymin</groupId>
+                <artifactId>knife4j-openapi3-jakarta-spring-boot-starter</artifactId>
+                <version>${knife4j.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>com.hjc</groupId>
+                <artifactId>commons</artifactId>
+                <version>${project.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>com.hjc</groupId>
+                <artifactId>model</artifactId>
+                <version>${project.version}</version>
             </dependency>
         </dependencies>
     </dependencyManagement>
